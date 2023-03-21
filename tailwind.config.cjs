@@ -11,6 +11,9 @@ module.exports = {
           violet: "#EEEDEA",
         },
       },
+      fontFamily: {
+        sans: ["Nunito Sans"],
+      },
     },
   },
   plugins: [],
