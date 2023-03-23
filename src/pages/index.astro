@@ -5,26 +5,28 @@ import NavBar from "../components/NavBar.astro";
 ---
 
 <Layout>
-  <NavBar />
+  <div class="container mx-auto">
+    <NavBar />
 
-  <div class="flex gap-8">
-    <Card
-      class="bg-fis-green-light"
-      icon="check-circle"
-      title="Save taxes"
-      parrafo="PFRDA appinted POP (Point of Presence) registretion number 1614858 and were authorized to provide NPS services."
-    />
-    <Card
-      class="bg-fis-violet"
-      icon="percent"
-      title="Regulated & Transparent"
-      parrafo="Under Section 80CCD, save upto 15,480 in taxes."
-    />
-    <Card
-      class="bg-fis-beige"
-      icon="dollar-sign"
-      title="Get regular pension income"
-      parrafo="Build retirement corpus of 1.5 Cr in 30 years with investment a low as < 50,000 a year."
-    />
+    <div class="flex gap-8 justify-between">
+      <Card
+        class="bg-fis-green-light"
+        icon="check-circle"
+        title="Save taxes"
+        parrafo="PFRDA appinted POP (Point of Presence) registretion number 1614858 and were authorized to provide NPS services."
+      />
+      <Card
+        class="bg-fis-violet"
+        icon="percent"
+        title="Regulated & Transparent"
+        parrafo="Under Section 80CCD, save upto 15,480 in taxes."
+      />
+      <Card
+        class="bg-fis-beige"
+        icon="dollar-sign"
+        title="Get regular pension income"
+        parrafo="Build retirement corpus of 1.5 Cr in 30 years with investment a low as < 50,000 a year."
+      />
+    </div>
   </div>
 </Layout>
