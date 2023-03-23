@@ -1,0 +1,122 @@
+[
+  {
+    "label": "Company",
+    "url": "#",
+    "children": [
+      {
+        "label": "About us",
+        "url": "#"
+      },
+      {
+        "label": "Careers",
+        "url": "#"
+      },
+      {
+        "label": "Borrow",
+        "url": "#"
+      },
+      {
+        "label": "Partners",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "label": "Invest",
+    "url": "#",
+    "children": [
+      {
+        "label": "Mutual Funds",
+        "url": "#"
+      },
+      {
+        "label": "NPS",
+        "url": "#"
+      },
+      {
+        "label": "Gold",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "label": "Insure",
+    "url": "#",
+    "children": [
+      {
+        "label": "Health",
+        "url": "#"
+      },
+      {
+        "label": "Life",
+        "url": "#"
+      },
+      {
+        "label": "Motor/Auto",
+        "url": "#"
+      },
+      {
+        "label": "Micro",
+        "url": "#"
+      },
+      {
+        "label": "Commercial",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "label": "Goals",
+    "url": "#",
+    "children": [
+      {
+        "label": "Plan for the Future",
+        "url": "#"
+      },
+      {
+        "label": "Save Taxes",
+        "url": "#"
+      },
+      {
+        "label": "Protect Your Loved Ones",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "label": "Resources",
+    "url": "#",
+    "children": [
+      {
+        "label": "Expert thoughts",
+        "url": "#"
+      },
+      {
+        "label": "Fisdom Financial Guide",
+        "url": "#"
+      },
+      {
+        "label": "Weekly recap",
+        "url": "#"
+      },
+      {
+        "label": "Calculators",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "label": "Contact Details",
+    "url": "#",
+    "children": [
+      {
+        "label": "ask@fisdom.com",
+        "url": "#"
+      },
+      {
+        "label": "+918048093070",
+        "url": "#"
+      }
+    ]
+  }
+]
