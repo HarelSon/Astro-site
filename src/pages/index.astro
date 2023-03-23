@@ -3,122 +3,78 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <div>
-    <div class="menu-0">
-      <div class="menu">Invest<i class="fa-solid fa-chevron-down"></i></div>
-      <div class="menu">Insure<i class="fa-solid fa-chevron-down"></i></div>
-      <div class="menu">Goals<i class="fa-solid fa-chevron-down"></i></div>
-      <div class="menu">Partners<i class="fa-solid fa-chevron-down"></i></div>
-      <div class="menu"><i class="fa-solid fa-bars"></i></div>
-      
-  </div>
-  </div>
+  
   <div class="box">
-  <div class="box1">
-   <h4 class="title">NATIONAL PENSION SCHEME</h4>
-    <h2 class="text-black">A happier</h2>
-    <h2 class="text-purple">tomorrow.</h2>
-    <h2 class="text-black">A happier</h2>
-    <h2 class="text-purple">today</h2>
-    <p>Invest in the National Scheme to save <br /> for your retirement and save on tax today</p>
-    <h3 class="tag"><i class="fa-solid fa-lock"></i>NPS POP REG NO 1614858</h3>
+    <div class="box1">
+      <h4 class="title">NATIONAL PENSION SCHEME</h4>
+      <h2 class="text-black">A happier</h2>
+      <h2 class="text-purple">tomorrow.</h2>
+      <h2 class="text-black">A happier</h2>
+      <h2 class="text-purple">today</h2>
+      <p>Invest in the National Scheme to save <br /> for your retirement and save on tax today</p>
+      <h3 class="tag"><i class="fa-solid fa-lock"></i>NPS POP REG NO 1614858</h3>
+    </div>
+    <div class="box2">
+      <img class="img" src="/public/img.jpg" alt="">
+    </div>
   </div>
-  <div class="box2">
-    <img  class="img" src="/public/img.jpg" alt="">
-  </div>
-</div>
 </Layout>
 
 <style>
 
-.menu-0 {
-  display: flex;
-  margin-left: 44rem;
-  margin-top: 5px;
-  
-}
-
-.menu {
-  
-  font-weight: bold;
-  width: 75px;
-  text-align: center;
-  font-size: 13px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu:hover {
-  color: green;
-  
-}
-
-.fa-solid {
-  margin-right:25px;
-  margin-top: 3px;
-}
-
 .box {
-  
-    
-    border-radius: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 5px;
-    
+	border-radius: 15px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 5px;
 }
 
 .box1 {
-  margin-left: 150px;
+	margin-left: 150px;
 }
 
 .img {
-  height: 228px;
-  width: 390px;
+	height: 228px;
+	width: 390px;
 }
 
 .title {
-  color: #8891ab;
-  font-size:12px;
-  font-weight: bold;
-  
+	color: #8891ab;
+	font-size: 12px;
+	font-weight: bold;
 }
 
 .text-black {
-  font-weight: bold;
-  font-size: 48px;
+	font-weight: bold;
+	font-size: 48px;
 }
 .text-purple {
-  color: #5c59c3;
-  font-weight: bold;
-  font-size: 48px;
+	color: #5c59c3;
+	font-weight: bold;
+	font-size: 48px;
 }
 
 .tag {
-  
-    
-    width: 240px;
-    height: 22px;
-    background-color: #eff8f7;
-    border-radius: 4px;
-    display: flex;
-    margin-top: 10px;
-    padding-top:2px;
-    padding-rigth: 12px;
-    cursor: pointer;
-    color: green;
-    font-size: 13px;
+	width: 240px;
+	height: 22px;
+	background-color: #eff8f7;
+	border-radius: 4px;
+	display: flex;
+	margin-top: 10px;
+	padding-top: 2px;
+	padding-rigth: 12px;
+	cursor: pointer;
+	color: green;
+	font-size: 13px;
 }
 
-.tag:hover{
-  
-  background-color: green;
-  color: #eff8f7;
+.tag:hover {
+	background-color: green;
+	color: #eff8f7;
 }
 
 .fa-lock {
-  margin-left: 20px;
+	margin-left: 20px;
 }
 
 </style>
