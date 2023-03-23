@@ -3,7 +3,7 @@ import { Icon } from "astro-icon";
 const { title, parrafo, icon, class: className } = Astro.props;
 ---
 
-<div class:list={["relative w-80 h-96 rounded-xl", className]}>
+<div class:list={["relative w-80 h-96 rounded-xl top-24", className]}>
   <Icon class="absolute right-5 top-5 h-28" name={icon} />
   <div class="absolute bottom-4 left-4 right-4">
     <h2 class="font-medium text-3xl">{title}</h2>
