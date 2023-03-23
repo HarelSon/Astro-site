@@ -3,5 +3,55 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <h1 class="font-sans text-4xl">nunito</h1>
+  <div class="box">
+  <div class="box1">
+   <h4 class="title">NATIONAL PENSION SCHEME</h4>
+    <h2 class="text-black">A happier</h2>
+    <h2 class="text-purple">tomorrow.</h2>
+    <h2 class="text-black">A happier</h2>
+    <h2 class="text-purple">today</h2>
+    <p>Invest in the National Scheme to save <br /> for your retirement and save on tax today</p>
+    <h3>NPS POP REG NO 1614858</h3>
+  </div>
+  <div class="box2">
+    <img  class="img" src="/public/img.jpg" alt="">
+  </div>
+</div>
 </Layout>
+
+<style>
+.box {
+  
+    outline:2px solid aquamarine;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.box1 {
+  text-align: center;
+}
+
+.img {
+  height: 228px;
+  width: 390px;
+}
+
+.title {
+  color: #8891ab;
+  font-size:12px;
+  font-weight: bold;
+  
+}
+
+.text-black {
+  font-weight: bold;
+  font-size: 48px;
+}
+.text-purple {
+  color: #5c59c3;
+  font-weight: bold;
+  font-size: 48px;
+}
+</style>
