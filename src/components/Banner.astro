@@ -1,16 +1,26 @@
+---
+import Icon from 'astro-icon';
+---
+
 <div class="box">
   <div class="box1">
     <h4 class="title">NATIONAL PENSION SCHEME</h4>
-    <h2 class="text-black">A happier</h2>
-    <h2 class="text-purple">tomorrow.</h2>
-    <h2 class="text-black">A happier</h2>
-    <h2 class="text-purple">today</h2>
+
+    <h2 class="text-black">
+      A happier <span class="text-purple">tomorrow</span> <br />
+      A happier <span class="text-purple">today</span>
+    </h2>
+    
     <p>
       Invest in the National Scheme to save <br /> for your retirement and save on
       tax today
     </p>
-    <h3 class="tag"><i class="fa-solid fa-lock"></i>NPS POP REG NO 1614858</h3>
+
+    <div class="tag">
+      <Icon name="lock-solid" /> NPS POP REG NO 1614858
+    </div>
   </div>
+
   <div class="box2">
     <img class="img" src="/public/img.jpg" alt="" />
   </div>
@@ -41,12 +51,12 @@
 
   .text-black {
     font-weight: bold;
-    font-size: 48px;
+    font-size: 64px;
+    line-height: 1.15;
   }
+
   .text-purple {
     color: #5c59c3;
-    font-weight: bold;
-    font-size: 48px;
   }
 
   .tag {
