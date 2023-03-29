@@ -1,20 +1,34 @@
+---
+import { Icon } from "astro-icon";
+import "@fontsource/nunito-sans";
+---
+
 <div class="testimonial">
-  <p class="comment">"Awesome"</p>
+  <p class="comment">"Awesome App. I Love the interface of the fisdom app"</p>
 
   <div class="person">
-    <div>
-      <img class="avatar"
-        src="https://avatars.githubusercontent.com/u/93014305?s=64&v=4"
-        alt=""
-      />
+    <div class="info">
+      <div>
+        <img
+          class="avatar"
+          src="https://avatars.githubusercontent.com/u/93014305?s=64&v=4"
+          alt=""
+        />
+      </div>
+
+      <div class="details">
+        <h4>Akul Sharma</h4>
+        <p>App store review</p>
+      </div>
     </div>
-    <div>
-      
-      <h4>Akul Sharma</h4>
-      
-      <div>App store review</div>
+
+    <div class="rating">
+      <Icon class="star" name="star-solid" />
+      <Icon class="star" name="star-solid" />
+      <Icon class="star" name="star-solid" />
+      <Icon class="star" name="star-solid" />
+      <Icon class="star" name="star-solid" />
     </div>
-    <div>star</div>
   </div>
 </div>
 
@@ -26,16 +40,48 @@
     display: flex;
     flex-direction: column;
     height: 200px;
+    width: 360px;
     justify-content: space-between;
   }
-  .person img {
-    width: 20px;
-    height: 20px;
+  .avatar {
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
   }
 
   .person {
     display: flex;
-    
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .comment {
+    font-weight: 600;
+  }
+
+  .details {
+    margin-left: 8px;
+  }
+
+  .details h4 {
+    font-weight: 600;
+  }
+
+  .details p {
+    font-size: 14px;
+    font-weight: 700;
+    color: gray;
+  }
+
+  .rating {
+    margin-left: 20px;
+    padding-top: 10px;
+    display: flex;
+  }
+
+  .star {
+    color: yellow;
+    width: 20px;
   }
 </style>
