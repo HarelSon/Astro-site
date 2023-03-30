@@ -2,10 +2,10 @@
 import { Icon } from "astro-icon";
 import "@fontsource/nunito-sans";
 
-const { description, rating } = Astro.props;
+const { description, rating, name, store } = Astro.props;
 
-const myArray = new Array(rating);
-const otherArray = new Array(5 - rating);
+const yellowStars = new Array(rating);
+const grayStars = new Array(5 - rating);
 ---
 
 <div class="testimonial">
@@ -22,20 +22,20 @@ const otherArray = new Array(5 - rating);
       </div>
 
       <div class="details">
-        <h4>Akul Sharma</h4>
-        <p>App store review</p>
+        <h4>{name}</h4>
+        {store && <p>{store} review</p>}
       </div>
     </div>
 
     <div class="rating">
       {
-        myArray.fill().map(() => {
+        yellowStars.fill().map(() => {
           return <Icon class="star" name="star-solid" />;
         })
       }
 
       {
-        otherArray.fill().map(() => {
+        grayStars.fill().map(() => {
           return <Icon class="star star--inactive" name="star-solid" />;
         })
       }
