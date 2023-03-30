@@ -2,7 +2,7 @@
 import { Icon } from "astro-icon";
 import "@fontsource/nunito-sans";
 
-const { description, rating, name, store } = Astro.props;
+const { description, rating, name, store, image } = Astro.props;
 
 const yellowStars = new Array(rating);
 const grayStars = new Array(5 - rating);
@@ -16,7 +16,7 @@ const grayStars = new Array(5 - rating);
       <div>
         <img
           class="avatar"
-          src="https://avatars.githubusercontent.com/u/93014305?s=64&v=4"
+          src={image}
           alt=""
         />
       </div>
