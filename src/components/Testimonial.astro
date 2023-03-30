@@ -1,10 +1,15 @@
 ---
 import { Icon } from "astro-icon";
 import "@fontsource/nunito-sans";
+
+const { description, rating } = Astro.props;
+
+const myArray = new Array(rating);
+const otherArray = new Array(5 - rating);
 ---
 
 <div class="testimonial">
-  <p class="comment">"Awesome App. I Love the interface of the fisdom app"</p>
+  <p class="comment">{description}</p>
 
   <div class="person">
     <div class="info">
@@ -23,11 +28,17 @@ import "@fontsource/nunito-sans";
     </div>
 
     <div class="rating">
-      <Icon class="star" name="star-solid" />
-      <Icon class="star" name="star-solid" />
-      <Icon class="star" name="star-solid" />
-      <Icon class="star" name="star-solid" />
-      <Icon class="star" name="star-solid" />
+      {
+        myArray.fill().map(() => {
+          return <Icon class="star" name="star-solid" />;
+        })
+      }
+
+      {
+        otherArray.fill().map(() => {
+          return <Icon class="star star--inactive" name="star-solid" />;
+        })
+      }
     </div>
   </div>
 </div>
@@ -83,5 +94,9 @@ import "@fontsource/nunito-sans";
   .star {
     color: yellow;
     width: 20px;
+  }
+
+  .star--inactive {
+    color: gray;
   }
 </style>
