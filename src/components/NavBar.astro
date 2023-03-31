@@ -1,0 +1,21 @@
+---
+import { Icon } from "astro-icon";
+import links from "../data/navigation.json";
+---
+
+<div class="flex justify-end">
+  <ul
+    class="top-4 right-4 text-center flex font-semibold gap-16 p-4 items-center"
+  >
+    {
+      links.map((link) => {
+        return (
+          <li>
+            <a href={link.url}>{link.label}</a>
+          </li>
+        );
+      })
+    }
+    <button><Icon class="h-3.5" name="bars" /></button>
+  </ul>
+</div>
