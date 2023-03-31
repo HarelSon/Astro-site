@@ -2,14 +2,16 @@
 import { Icon } from "astro-icon";
 import "@fontsource/nunito-sans";
 
-const { description, rating, name, store, image } = Astro.props;
+const { rating, name, store, image } = Astro.props;
 
 const yellowStars = new Array(rating);
 const grayStars = new Array(5 - rating);
 ---
 
 <div class="testimonial">
-  <p class="comment">{description}</p>
+  <p class="comment">
+    <slot />
+  </p>
 
   <div class="person">
     <div class="info">
@@ -66,7 +68,7 @@ const grayStars = new Array(5 - rating);
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .info {
     display: flex;
   }
