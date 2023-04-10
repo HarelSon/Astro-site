@@ -1,34 +1,34 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import NavBar from "../components/NavBar.astro";
-import Button from "../components/Button.astro";
+import Accordion from "../components/Accordion.astro";
 ---
+
 <Layout>
   <div class="container mx-auto">
     <NavBar />
-    <Button />
-    <div class="flex gap-8 justify-between">
-      <Card
-        class="bg-fis-green-light"
-        icon="check-circle"
-        title="Save taxes"
-        parrafo="PFRDA appinted POP (Point of Presence) registretion number 1614858 and were authorized to provide NPS services."
-      />
-      <Card
-        class="bg-fis-violet"
-        icon="percent"
-        title="Regulated & Transparent"
-        parrafo="Under Section 80CCD, save upto 15,480 in taxes."
-      />
-      <Card
-        class="bg-fis-beige"
-        icon="dollar-sign"
-        title="Get regular pension income"
-        parrafo="Build retirement corpus of 1.5 Cr in 30 years with investment a low as < 50,000 a year."
-      />
-    </div>
+
+    <h2>Frequently Asked <span>Questions</span></h2>
+
+    <Accordion title="Accordion 01">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+      necessitatibus minus nesciunt rem adipisci fuga nisi consequatur beatae,
+      delectus ad autem ipsam possimus, dicta magni recusandae eaque
+      perspiciatis, fugit nulla?
+    </Accordion>
+
+    <Accordion title="Accordion 02">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+      necessitatibus minus nesciunt rem adipisci fuga nisi consequatur beatae,
+      delectus ad autem ipsam possimus, dicta magni recusandae eaque
+      perspiciatis, fugit nulla?
+    </Accordion>
+
+    <Accordion title="Accordion 03">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+      necessitatibus minus nesciunt rem adipisci fuga nisi consequatur beatae,
+      delectus ad autem ipsam possimus, dicta magni recusandae eaque
+      perspiciatis, fugit nulla?
+    </Accordion>
   </div>
 </Layout>
-
-
