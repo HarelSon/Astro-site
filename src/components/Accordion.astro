@@ -1,62 +1,29 @@
 ---
-const { title } = Astro.props;
 ---
 
-<details class="mb-6">
-  <summary
-    class="font-semibold list-none flex items-center gap-2 cursor-pointer"
-  >
-    <i
-      class="h-5 w-5 rounded-full bg-slate-300 flex items-center justify-center"
-    >
-      <svg
-        class="plus w-2"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 448 512"
-      >
-        <path
-          d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
-        >
-        </path>
-      </svg>
+<div class="accordion">
+  <slot />
+</div>
 
-      <svg
-        class="minus w-2"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 448 512"
-      >
-        <path
-          d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"
-        >
-        </path>
-      </svg>
-    </i>
+<script>
+  const accordions = document.querySelectorAll(".accordion");
 
-    {title}
-  </summary>
-  <div class="pl-7">
-    <slot />
-  </div>
-</details>
+  accordions.forEach((accordion) => {
+    [...accordion.children].forEach((child) => {
+      const summary = child.querySelector("summary");
 
-<style>
-  details summary {
-    color: gray;
-  }
+      if (summary) {
+        summary.addEventListener("click", (event) => {
+          console.log(event);
 
-  details[open] summary {
-    color: black;
-  }
+          const accordionParent = event?.target?.closest(".accordion");
+          const openedItems = accordionParent.querySelectorAll("details[open]");
 
-  details[open] svg.plus {
-    display: none;
-  }
-
-  details svg.minus {
-    display: none;
-  }
-
-  details[open] svg.minus {
-    display: block;
-  }
-</style>
+          openedItems.forEach((item) => {
+            item.removeAttribute("open");
+          });
+        });
+      }
+    });
+  });
+</script>
