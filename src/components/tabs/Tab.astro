@@ -2,4 +2,19 @@
 const { title } = Astro.props;
 ---
 
-<div>{title}</div>
+<div class="tab">{title}</div>
+
+<style>
+  .tab {
+    background-color: #3669e8;
+    color: white;
+    border-radius: 20px 20px 0px 0px;
+
+    width: 200px;
+    height: 70px;
+
+    font-weight: 600;
+    padding-left: 32px;
+    padding-top: 16px;
+  }
+</style>
