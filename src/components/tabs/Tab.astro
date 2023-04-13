@@ -1,24 +1,24 @@
 ---
 const { title } = Astro.props;
-const { headline } = Astro.props;
+const { headline, active } = Astro.props;
 ---
 
-<div class="tab tab--active">
-<div class="line">
-</div>
-<div class="headline">{headline}</div> 
-{title}
+<!-- <div class="tab tab--active"> -->
+<div class:list={["tab", { "tab--active": active }]}>
+  <div class="line"></div>
+  <div class="headline">{headline}</div>
+  {title}
 </div>
 
 <style>
-.line {
-  background-color: #3669e8;
-  width: 4px;
-  height: 25px;
-  position: absolute;
-  top: 12px;
-  left: 0px;
-}
+  .line {
+    background-color: #3669e8;
+    width: 4px;
+    height: 25px;
+    position: absolute;
+    top: 12px;
+    left: 0px;
+  }
 
   .tab {
     background-color: #3669e8;
@@ -35,7 +35,7 @@ const { headline } = Astro.props;
 
   .tab--active {
     background-color: white;
-    color:#3669e8;
+    color: #3669e8;
   }
   .headline {
     font-size: 18px;
