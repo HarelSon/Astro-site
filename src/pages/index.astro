@@ -3,6 +3,9 @@ import Layout from "../layouts/Layout.astro";
 import NavBar from "../components/NavBar.astro";
 import AccordionItem from "../components/AccordionItem.astro";
 import Accordion from "../components/Accordion.astro";
+
+import Tabs from "../components/tabs/Tabs.astro";
+import Tab from "../components/tabs/Tab.astro";
 ---
 
 <Layout>
@@ -34,23 +37,14 @@ import Accordion from "../components/Accordion.astro";
       </AccordionItem>
     </Accordion>
 
-    <h2>Frequently Asked <span>Questions</span></h2>
+    <h2>Tabs component</h2>
 
-    <Accordion>
-      <AccordionItem title="Accordion 01">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-        necessitatibus minus nesciunt rem adipisci fuga nisi consequatur beatae,
-        delectus ad autem ipsam possimus, dicta magni recusandae eaque
-        perspiciatis, fugit nulla?
-      </AccordionItem>
-
-      <AccordionItem title="Accordion 02">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-        necessitatibus minus nesciunt rem adipisci fuga nisi consequatur beatae,
-        delectus ad autem ipsam possimus, dicta magni recusandae eaque
-        perspiciatis, fugit nulla?
-      </AccordionItem>
-    </Accordion>
+    <Tabs>
+      <Tab title="Queu" />
+      <Tab title="Earlier" />
+      <Tab title="Wait List" />
+      <Tab title="No Show" />
+    </Tabs>
   </div>
 </Layout>
 
